@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwanatha R | Portfolio Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="design.css" />
+
+    <style>
+      .project-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 1.25rem;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      .project-link i {
+        font-size: 0.9rem;
+      }
+
+      .chip {
+        border-radius: 999px;
+        padding: 0.55rem 1rem;
+        border: 1.5px solid rgba(184, 148, 255, 0.45);
+        background: rgba(184, 148, 255, 0.08);
+        box-shadow: 0 0 0 rgba(184, 148, 255, 0);
+        animation: vishSkillGlow 4s infinite ease-in-out;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .chip:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 12px rgba(184, 148, 255, 0.6);
+      }
+
+      .chip i {
+        color: #e0d4ff;
+      }
+
+      @keyframes vishSkillGlow {
+        0% {
+          box-shadow: 0 0 0 rgba(184, 148, 255, 0);
+        }
+        50% {
+          box-shadow: 0 0 14px rgba(184, 148, 255, 0.7);
+        }
+        100% {
+          box-shadow: 0 0 0 rgba(184, 148, 255, 0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="logo">VISHWANATHA R</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" target="_blank" class="resume-link-nav">Resume</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I am Vishwanatha R</p>
+          <h1>AIML Student</h1>
+          <p class="intro">
+            Student of Artificial Intelligence and Machine Learning with hands-on
+            experience in AI-driven applications and full-stack development.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="primary-btn"
+              href="mailto:vishwanath1284@gmail.com?subject=Project%20Opportunity"
+            >
+              Get in touch
+            </a>
+
+            <div class="socials">
+              <span>Connect</span>
+              <div class="social-icons">
+                <a
+                  href="https://github.com/VishwanathaRgitgit"
+                  target="_blank"
+                  rel="noopener"
+                ><i class="fa-brands fa-github"></i></a>
+                <a
+                  href="https://www.linkedin.com/in/vishwanathar/"
+                  target="_blank"
+                  rel="noopener"
+                ><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame" tabindex="0">
+            <img src="image.jpg" alt="Portrait of Vishwanatha R" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="panel">
+        <div class="panel-header">
+          <p class="eyebrow">About Me</p>
+          <h2>Education • Interpersonal Skills</h2>
+          <p>
+            Engineering student specializing in Artificial Intelligence and
+            Machine Learning with practical exposure to software development
+            projects.
+          </p>
+        </div>
+
+        <div class="panel-grid">
+          <div class="card">
+            <h3>Education</h3>
+            <ul class="timeline">
+              <li>
+                <span class="label">
+                  Bachelor of Engineering, Artificial Intelligence and Machine
+                  Learning
+                </span>
+                <p>East West Institute of Technology (VTU University)</p>
+                <small>2026 • CGPA: 7.28</small>
+              </li>
+              <li>
+                <span class="label">PUC</span>
+                <p>SDM Residential PU College, Ujire</p>
+                <small>2022 • CGPA: 8.73</small>
+              </li>
+              <li>
+                <span class="label">SSLC</span>
+                <p>St Antony’s High School</p>
+                <small>2020 • CGPA: 8.96</small>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Interpersonal Skills</h3>
+            <ul class="timeline">
+              <li>
+                <span class="label">Problem-Solving & Adaptability</span>
+                <p>
+                  Quick learner with strong problem-solving skills and
+                  adaptability to new technologies.
+                </p>
+              </li>
+              <li>
+                <span class="label">Reliability & Discipline</span>
+                <p>
+                  Reliable, disciplined, and able to manage tasks efficiently
+                  with a positive work attitude.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="panel">
+        <div class="panel-header">
+          <p class="eyebrow">Skills</p>
+          <h2>Core Technologies</h2>
+          <p>Strong technical foundation and problem-solving abilities.</p>
+        </div>
+
+        <div class="panel-grid">
+          <div class="card">
+            <div class="chip-grid">
+              <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="chip"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+              <span class="chip"><i class="fa-brands fa-github"></i> Git & GitHub</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="panel">
+        <div class="panel-header">
+          <p class="eyebrow">Certifications</p>
+          <h2>Certifications & Learning</h2>
+          <p>Professional training and continuous learning.</p>
+        </div>
+
+        <div class="panel-grid">
+          <div class="card">
+            <ul class="timeline">
+              <li>
+                <span class="label">Python Full Stack Development</span>
+                <p>
+                  Currently pursuing <strong>Python Full Stack Development</strong>
+                  at Pentagon Space.
+                </p>
+              </li>
+              <li>
+                <span class="label">HTML & CSS</span>
+                <p>
+                  Completed training in <strong>HTML</strong> and
+                  <strong>CSS</strong>.
+                </p>
+              </li>
+              <li>
+                <span class="label">Data Science in Python</span>
+                <p>
+                  Completed <strong>Data Science in Python</strong>.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="panel">
+        <div class="panel-header">
+          <p class="eyebrow">Projects</p>
+          <h2>Featured Work</h2>
+          <p>Hands-on academic and personal projects.</p>
+        </div>
+
+        <div class="panel-grid">
+          <article class="card project-card">
+            <div class="card-tag">Python • ML • HTML/CSS</div>
+            <h3>Air Quality Interpolation and Prediction</h3>
+            <ul>
+              <li>
+                Developed a unified deep learning model that performs
+                fine-grained air quality interpolation and future pollutant
+                prediction.
+              </li>
+              <li>
+                Integrated feature-analysis mechanisms to identify key factors
+                driving variations in air quality.
+              </li>
+            </ul>
+            <a
+              href="https://github.com/VishwanathaRgitgit/DeepAir"
+              target="_blank"
+              class="project-link"
+            >
+              Link <i class="fa-solid fa-link"></i>
+            </a>
+          </article>
+
+          <article class="card project-card">
+            <div class="card-tag">Python • Flask • HTML • CSS</div>
+            <h3>Smart Gym – AI Fitness Coach</h3>
+            <ul>
+              <li>
+                Built an AI Fitness Coach web application using Python (Flask),
+                HTML, and CSS to calculate BMI and deliver personalized fitness
+                plans.
+              </li>
+              <li>
+                Designed health tracking dashboards and progress analytics with
+                calendar logging and rewards to improve user engagement and
+                consistency.
+              </li>
+            </ul>
+            <a
+              href="https://github.com/VishwanathaRgitgit/smart-gym"
+              target="_blank"
+              class="project-link"
+            >
+              Link <i class="fa-solid fa-link"></i>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="panel contact-panel">
+        <div class="panel-header">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s collaborate on AI</h2>
+          <p>
+            Open to AI/ML roles, internships, and collaborative research or
+            development projects.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card contact-card">
+            <span class="label">Email</span>
+            <a href="mailto:vishwanath1284@gmail.com">
+              vishwanath1284@gmail.com
+            </a>
+
+            <span class="label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/vishwanathar/" target="_blank">
+              linkedin.com/in/vishwanathar
+            </a>
+
+            <span class="label">GitHub</span>
+            <a href="https://github.com/VishwanathaRgitgit" target="_blank">
+              github.com/VishwanathaRgitgit
+            </a>
+
+            <p class="status">Ready to collaborate</p>
+
+            <a
+              class="primary-btn cta-btn"
+              href="mailto:vishwanath1284@gmail.com"
+            >
+              <i class="fa-regular fa-paper-plane"></i>
+              Start a conversation
+            </a>
+          </div>
+
+          <!-- UPDATED AVAILABILITY -->
+          <div class="card availability-card">
+            <h3>Availability</h3>
+            <p>
+              Open for freelance work, internships, hackathons & AI/ML collaborations.
+            </p>
+            <ul>
+              <li>AI/ML prototyping & experimentation</li>
+              <li>Full-stack web development</li>
+              <li>Python Full-Stack Developer roles</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
